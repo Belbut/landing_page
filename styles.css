@@ -5,7 +5,8 @@
 body,
 ul,
 h1,
-h2 {
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -15,9 +16,18 @@ h2 {
 .information,
 .quote,
 .call-to-action,
-footer {
+.footer {
     padding-left: 8%;
     padding-right: 8%;
+}
+
+.hero,
+.call-to-action,
+.information,
+.quote {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 }
 
 .header {
@@ -44,12 +54,16 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding-top: 6%;
-    padding-bottom: 6%;
 }
 
 .hero .left {
-    flex: 0 1 500px;
+    flex: 0 1 600px;
+}
+
+.hero .left p,
+.information .images p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 
@@ -60,7 +74,8 @@ a {
     background-color: grey;
 }
 
-.hero button {
+.hero button,
+.call-to-action button {
     color: #F9FAF8;
     font-weight: bolder;
     border: 0;
@@ -69,14 +84,16 @@ a {
     border-radius: 12px;
 }
 
+.call-to-action button {
+    border: solid 1px white
+}
+
 .information {
-    padding-top: 4%;
-    padding-bottom: 4%;
     text-align: center;
 }
 
 .information .images {
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     align-items: center;
 }
@@ -90,19 +107,19 @@ a {
     margin-right: auto;
 }
 
-.quote {
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-
-.quote p {
-    margin: 0;
-}
-
 .quote .signature {
     text-align: end;
     font-weight: bolder;
 }
+
+.call-to-action .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 3%;
+}
+
 
 .header,
 .hero,
@@ -128,8 +145,9 @@ a {
 }
 
 button,
-.call-to-action {
+.call-to-action .box {
     background-color: #3882F6;
+    color: #F9FAF8;
 }
 
 .information h2 {
