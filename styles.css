@@ -16,7 +16,7 @@ p {
 .information,
 .quote,
 .call-to-action,
-.footer {
+.quote {
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -24,7 +24,7 @@ p {
 .hero,
 .call-to-action,
 .information,
-.quote {
+.quote{
     padding-top: 5%;
     padding-bottom: 5%;
 
@@ -118,6 +118,13 @@ a {
     align-items: center;
     border-radius: 10px;
     padding: 3%;
+}
+
+.footer{
+    color: #F9FAF8;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 
